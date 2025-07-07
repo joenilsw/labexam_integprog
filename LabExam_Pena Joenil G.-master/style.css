@@ -1,31 +1,65 @@
+/* Reset and base styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f1f1f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   display: flex;
-  height: 100vh;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   margin: 0;
 }
+
+/* Container with soft shadow and rounded corners */
 .login-container {
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px gray;
-}
-input {
-  margin-bottom: 10px;
+  background: #fff;
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
   width: 100%;
-  padding: 10px;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: center;
 }
+
+/* Input styling with subtle border and focus effect */
+input {
+  width: 100%;
+  padding: 14px 15px;
+  margin-bottom: 20px;
+  border: 1.8px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.4);
+}
+
+/* Button with gradient background and smooth hover */
 button {
   width: 100%;
-  padding: 10px;
-  background-color: #4c4c4c;
-  color: white;
+  padding: 14px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
+
 button:hover {
-  background-color: #333;
+  background: linear-gradient(90deg, #5563d6, #5a3d88);
+}
+
+/* Optional: Add a subtle header */
+.login-container h2 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #333;
 }
