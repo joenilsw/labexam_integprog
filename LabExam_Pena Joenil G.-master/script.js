@@ -1,5 +1,5 @@
 document.getElementById("loginForm").addEventListener("submit", function (e) {
-  e.preventDefault(); // prevent form from submitting normally
+  e.preventDefault(); // Prevent default form submission
 
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value.trim();
@@ -7,7 +7,10 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   if (email === "" || password === "") {
     alert("Please fill in both fields.");
   } else {
-    // Redirect to home.html regardless of input
-    window.location.href = "home.html";
+    // Redirect to home.html after a brief delay
+    setTimeout(function () {
+      window.location.href = "home.html";
+    }, 500); // 500ms delay for user experience
   }
 });
+
