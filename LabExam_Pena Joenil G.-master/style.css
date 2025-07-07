@@ -1,4 +1,3 @@
-/* Reset and base styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #667eea, #764ba2);
@@ -9,7 +8,7 @@ body {
   margin: 0;
 }
 
-/* Container with soft shadow and rounded corners */
+
 .login-container {
   background: #fff;
   padding: 40px 35px;
@@ -21,7 +20,7 @@ body {
   text-align: center;
 }
 
-/* Input styling with subtle border and focus effect */
+
 input {
   width: 100%;
   padding: 14px 15px;
@@ -39,7 +38,6 @@ input:focus {
   box-shadow: 0 0 8px rgba(102, 126, 234, 0.4);
 }
 
-/* Button with gradient background and smooth hover */
 button {
   width: 100%;
   padding: 14px;
@@ -57,7 +55,6 @@ button:hover {
   background: linear-gradient(90deg, #5563d6, #5a3d88);
 }
 
-/* Optional: Add a subtle header */
 .login-container h2 {
   margin-bottom: 25px;
   font-weight: 700;
