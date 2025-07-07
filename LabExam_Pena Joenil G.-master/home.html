@@ -1,36 +1,39 @@
-
-
-<!-- THIS IS FOR BRANCH FUTURE NAV -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    nav {
-  background: #4c4c4c;
-  padding: 10px;
-  color: white;
-}
-nav a {
-  color: white;
-  margin-right: 10px;
-  text-decoration: none;
-}
-
-</style>
 <body>
-  <h1>Welcome to the Homepage!</h1>
-  <!-- Add inside <body> -->
-<nav>
-  <a href="home.html">Home</a> |
-  <a href="index.html">Logout</a>
-</nav>
+  <header>
+    <nav class="navbar">
+      <a href="home.html" class="logo">MyApp</a>
+      <ul class="nav-links">
+        <li><a href="home.html" class="nav-item">Home</a></li>
+        <li><a href="index.html" class="nav-item">Logout</a></li>
+      </ul>
+      <div class="burger" id="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
 
+  <main>
+    <h1>Welcome to the Homepage!</h1>
+    <p>Explore our features and enjoy your stay.</p>
+  </main>
+
+  <script>
+    document.getElementById('burger').addEventListener('click', () => {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
+
 
